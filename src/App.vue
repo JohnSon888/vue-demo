@@ -41,4 +41,18 @@ a,a:hover,a:visited,a:link{
   text-decoration: none;
   outline: none;
 }
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both
+}
 </style>

@@ -1,33 +1,15 @@
 <template>
 	<div id="page-main" name="page-main">
 		<div class="container">
-			<el-row>
 		    <homeelec /> 
-		    </el-row>
-		    <el-row>
-			    <smart /> 
-		    </el-row>
-		    <el-row>
-			    <match /> 
-		    </el-row>
-		    <el-row>
-			    <accessories /> 
-		    </el-row>
-		    <el-row>
-			    <around /> 
-		    </el-row>
-		    <el-row>
-			    <recommend /> 
-		    </el-row>
-		    <el-row>
-			    <comment /> 
-		    </el-row>
-		    <el-row>
-			    <content /> 
-		    </el-row>
-		    <el-row>
-			    <video /> 
-		    </el-row>
+		    <smart /> 
+		    <match /> 
+		    <accessories /> 
+		    <around /> 
+		    <recommend /> 
+		    <comment /> 
+		    <contents /> 
+		    <videos /> 
 		</div>
 	</div>
 </template>

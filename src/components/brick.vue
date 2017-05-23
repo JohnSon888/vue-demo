@@ -26,11 +26,14 @@
     position: relative;
     z-index: 1;
     float: left;
-    width: 234px;
+    border: none;
     margin-bottom: 14px;
     background: #fff;
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
+}
+.brick-item-m{
+  width: 234px;
 }
 .brick-item-m .figure-img {
     width: 150px;
@@ -92,7 +95,7 @@
     bottom: 0;
     left: 0;
     z-index: 3;
-    width: 234px;
+    /*width: 234px;*/
     height: 0;
     overflow: hidden;
     _zoom: 1;
@@ -131,6 +134,9 @@
 
 .clearfix:after {
   clear: both
+}
+.el-card{
+  border: none;
 }
 </style>
 

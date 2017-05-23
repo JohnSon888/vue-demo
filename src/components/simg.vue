@@ -6,11 +6,11 @@
 	</div>
 </template>
 <style>
-	 .brick-item{
+	.brick-item{
 	    position: relative;
 	    z-index: 1;
 	    float: left;
-	    width: 234px;
+		width: 234px;
 	    margin-bottom: 14px;
 	    background: #fff;
 	    -webkit-transition: all .2s linear;
@@ -21,12 +21,15 @@
 	    height: 170px;
 	    transition: box-shadow .2s linear;
 	}
-	.brick-item-l{
-		width: 234px;
-	    height: 614px;
+	.brick-item-m{
+	    height: 288px;
 	    transition: box-shadow .2s linear;
 	}
-	.brick-item-l img{
+	.brick-item-l{
+	    height: 590px;
+	    transition: box-shadow .2s linear;
+	}
+	.brick-item img{
 		width: 100%;
 	}
 </style>

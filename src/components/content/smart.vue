@@ -15,42 +15,18 @@
             </div>
             <div class="row clearfix">
             	<div class="brick-promo-list">
-            		<el-row :span="4">
-	            		<el-col>
-		            		<simg class="brick-item-m"/>
-		            	</el-col>
-		            	<el-col>
-		            		<simg class="brick-item-m"/>
-		            	</el-col>
-	            	</el-row>
+            		<simg class="brick-item-m"/>
+            		<simg class="brick-item-m"/>
             	</div>
             	<div class="homeelec-content">
-            		<el-row type="flex" justify="space-around">
-	            		<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick/>
-		            	</el-col>
-		            	<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick />
-		            	</el-col>
-		            	<el-col>
-		            		<brick/>
-		            	</el-col>
-	            	</el-row>
+            		<brick />
+                    <brick />
+                    <brick />
+                    <brick />
+                    <brick />
+                    <brick />
+                    <brick />
+                    <brick />
             	</div>
             </div>
         </div>
@@ -145,11 +121,13 @@ export default {
 }
 .homeelec-content{
 	float: left;
-    width: 978px;
+    width: 992px;
     overflow: hidden;
 }
-.homeelec-content .el-row{
-    margin: 0;
-    padding: 0;
+.homeelec-content .brick-item-m{
+    border: none;
+    border-radius: 0;
+    margin-left: 14px;
+    margin-bottom: 14px;
 }
 </style>

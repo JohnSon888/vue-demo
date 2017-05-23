@@ -1,17 +1,15 @@
 <template>
 	<div id="hero-sub" name="hero-sub">
-		<el-row :gutter="20">
-		    <el-col :span="4">
-		    	<channel />
-		    </el-col>
-		    <el-col :span="20">
-			    <div class="brick-item-box">
-			    	<simg class="brick-item-s"/>
-				    <simg class="brick-item-s" />
-				    <simg class="brick-item-s" />
-			    </div>
-		    </el-col>
-	    </el-row>
+		<div class="container clearfix">
+	    	<div class="span4">
+	    		<channel />
+	    	</div>
+	    	<div class="span16">
+	    		<simg class="first brick-item-s" />
+			    <simg class="brick-item-s" />
+			    <simg class="brick-item-s" />
+	    	</div>
+		</div>
 	</div>
 </template>
 <script >
@@ -31,5 +29,21 @@ export default {
 }
 </script>
 <style scoped>
-
+	.span4{
+		float: left;
+		width: 234px;
+	}
+	.span16{
+		float: left;
+	    width: 978px;
+        margin-left: 14px;
+	    min-height: 1px;
+	}
+	.span16 .brick-item-s.first{
+		margin-left: 0px;
+	}
+	.span16 .brick-item-s{
+		float: left;
+		margin-left: 15px;
+	}
 </style>
