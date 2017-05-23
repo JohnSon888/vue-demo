@@ -9,11 +9,11 @@
                 </div>
             </div>
             <div class="more clearfix">
-			    <brick class="brick-item-m"/>
-			    <brick class="brick-item-m"/>
-			    <brick class="brick-item-m"/>
-			    <brick class="brick-item-m"/>
-			    <brick class="brick-item-m"/>
+    			    <brick />
+    			    <brick />
+    			    <brick />
+    			    <brick />
+    			    <brick />
             </div>
         </div>
 	</div>

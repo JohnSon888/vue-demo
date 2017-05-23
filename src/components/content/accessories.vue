@@ -21,11 +21,11 @@
             		<brick />
             		<brick />
             		<brick />
-            		<brick/>
             		<brick />
             		<brick />
             		<brick />
-            		<brick/>
+            		<brick />
+            		<brick />
             	</div>
             </div>
         </div>

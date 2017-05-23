@@ -27,6 +27,7 @@ export default {
 <style scoped>
 #contents{
 	width: 100%;
+  padding-top: 50px;
 }
 
 .left{
@@ -40,8 +41,6 @@ export default {
   height: 100%;
   float: right;
 }
-
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #F5F5F5;

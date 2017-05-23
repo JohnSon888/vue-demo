@@ -5,10 +5,10 @@
                 <h2 class="title">内容</h2>
             </div>
             <div class="more clearfix">
-				<brick class="brick-item-m"/>
-				<brick class="brick-item-m"/>
-				<brick class="brick-item-m"/>
-				<brick class="brick-item-m"/>
+      				<brick />
+      				<brick />
+      				<brick />
+      				<brick />
             </div>
         </div>
 	</div>

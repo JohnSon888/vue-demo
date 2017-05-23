@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="site-header">
+		<!-- <div class="site-header">
 			<div class="container">
 				<div class="menu">
 					<el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
@@ -47,7 +47,7 @@
 					<el-button type="primary">购物车</el-button>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
 <script>
@@ -68,13 +68,14 @@
 
 <style>
 	.headers{
+		background: #333;
 	}
 	.headers .site-topbar{
 		height: 40px;
-		background: #324157;
+		background: #333;
 	}
 	.headers .container{
-		width: 1200px;
+		width: 1226px;
 		margin: 0 auto;
 	}
 	.headers .site-header{
@@ -102,6 +103,7 @@
 		height: 40px;
 	    line-height: 40px;
 	    padding: 0 5px;
+	    background: #333;
 	}
 	
 </style>	
