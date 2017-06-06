@@ -1,26 +1,33 @@
 <template>
     <el-card class="brick-item brick-item-m">
        <div class="figure figure-img">
-       		<a href="http://item.mi.com/product/5348.html">
-       			<img src="http://i1.mifile.cn/a1/pms_1490077058.71391368!220x220.png" alt="小米电视4A 43英寸">
+       		<a :href="brick.href">
+       			<img :src="brick.src" alt="小米电视4A 43英寸">
        		</a>
        	</div> 
        	<h3 class="title"> 
-	       	<a href="http://item.mi.com/product/5348.html">小米电视4A 43英寸</a>
+	       	<a href="http://item.mi.com/product/5348.html">{{brick.title}}</a>
        	</h3>  
-       	<p class="desc">老人小孩都会用的人工智能语音电视</p>  
+       	<p class="desc">{{brick.desc}}</p>  
        	<p class="price"> 
-	       	<span class="num">2099</span>元  
+	       	<span class="num">{{brick.price}}</span>元  
        	</p> 
        	<p class="rank"></p>   
        	<div class="review-wrapper"> 
 	       	<a href="http://item.mi.com/product/5348.html"> 
-		       	<span class="review">第一次买小米电视，外观挺大气，图像清晰，声音也不错，...</span><span class="author"> 来自于 山楂果茶 的评价 <span class="date"></span></span> 
+		       	<span class="review">{{brick.review}}</span><span class="author">{{brick.author}}<span class="date"></span></span> 
 	       	</a> 
        	</div>
     </el-card>
 </template>
-
+<script>
+  export default{
+    props: ['brick'],
+    data() {
+      return;
+    }
+  }
+</script>
 <style>
   .brick-item {
     position: relative;
@@ -140,12 +147,3 @@
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      currentDate: new Date()
-    };
-  }
-}
-</script>

@@ -1,10 +1,21 @@
 <template>
-	<div class="brick-item">
+	<div class="brick-item" name="brick-item">
 		<a class="item" href="//item.mi.com/product/10000021.html">
-			<img alt="小米Note2分期6" src="http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg" srcset="//i3.mifile.cn/a4/xmad_14952963969092_xcvji.jpg 2x">
+			<img alt="小米Note2分期6" :src="todo.src">
 		</a>
 	</div>
 </template>
+<script>
+	export default {
+	  props: ['todo'],
+	  data () {
+	    return {
+	      activeIndex: '1',
+	    }
+	  }
+	 
+	}
+</script>
 <style>
 	.brick-item{
 	    position: relative;
@@ -31,5 +42,6 @@
 	}
 	.brick-item img{
 		width: 100%;
+		height: 100%;
 	}
 </style>

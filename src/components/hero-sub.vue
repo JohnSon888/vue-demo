@@ -5,9 +5,7 @@
 	    		<channel />
 	    	</div>
 	    	<div class="span16">
-	    		<simg class="first brick-item-s" />
-			    <simg class="brick-item-s" />
-			    <simg class="brick-item-s" />
+	    		<simg class="brick-item-s"  v-for="item in subList" v-bind:todo="item" />
 	    	</div>
 		</div>
 	</div>
@@ -23,7 +21,11 @@ export default {
   },
   data () {
     return {
-      app: ''
+      subList: [
+	      { src: 'http://i3.mifile.cn/a4/xmad_14944176653918_dXbtB.jpg' },
+	      { src: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg' },
+	      { src: 'http://i3.mifile.cn/a4/xmad_14953769916932_zVxkZ.jpg' }
+	    ]
     }
   }
 }
@@ -39,7 +41,7 @@ export default {
         margin-left: 14px;
 	    min-height: 1px;
 	}
-	.span16 .brick-item-s.first{
+	.span16 .brick-item-s:nth-child(1){
 		margin-left: 0px;
 	}
 	.span16 .brick-item-s{

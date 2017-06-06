@@ -14,18 +14,10 @@
             </div>
             <div class="row clearfix">
             	<div class="brick-promo-list">
-            		<simg class="brick-item-m"/>
-            		<simg class="brick-item-m"/>
+            		<simg class="brick-item-m"  v-for="item in subList" v-bind:todo="item" />
             	</div>
             	<div class="homeelec-content">
-            		<brick />
-                    <brick />
-                    <brick />
-                    <brick />
-                    <brick />
-                    <brick />
-                    <brick />
-                    <brick />
+            		<brick v-for="item in brickList" v-bind:brick="item"></brick>
             	</div>
             </div>
         </div>
@@ -42,7 +34,84 @@ export default {
   },
   data () {
     return {
-      activeIndex: '1',
+        subList: [
+          { src: 'http://i3.mifile.cn/a4/xmad_1496673909036_BxUMZ.jpg' },
+          { src: 'http://i3.mifile.cn/a4/xmad_14950996440442_FrUIx.jpg' }
+        ],
+      brickList:[
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14917453512947_AmXkT.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '111',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14913905000358_VqawM.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '222',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_1496643954435_EcHtv.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '333',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14926862610682_UhkfS.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '444',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14926528960147_wJMsC.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '555',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14926862610682_UhkfS.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '444',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14926528960147_wJMsC.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '555',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          },
+          { 
+            href: 'http://item.mi.com/product/5348.html',
+            src: 'http://i3.mifile.cn/a4/xmad_14926528960147_wJMsC.png',
+            title: '小米',
+            desc: '小米加大米',
+            price: '555',
+            author: 'JohnSon',
+            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+          }
+      ]
     }
   },
   methods: {
