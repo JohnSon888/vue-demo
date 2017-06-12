@@ -1,6 +1,6 @@
 <template>
 	<div id="recommend" name="recommend">
-		<div id="recommend" class="home-brick-box home-brick-row-2-box xm-plain-box">
+		<div id="recommend" class="home-brick-box xm-plain-box">
             <div class="box-hd">
                 <h2 class="title">为您推荐</h2>
                 <div class="more">

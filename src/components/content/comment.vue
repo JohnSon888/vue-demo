@@ -1,6 +1,6 @@
 <template>
 	<div id="comment" name="comment">
-		<div id="comment" class="home-brick-box home-brick-row-2-box xm-plain-box">
+		<div id="comment" class="home-brick-box xm-plain-box">
             <div class="box-hd">
                 <h2 class="title">热评产品</h2>
             </div>

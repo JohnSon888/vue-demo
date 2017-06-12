@@ -21,38 +21,3 @@ export default {
 }
 </script>
 
-<style>
-*{
-  font-family: microsoft yahei;
-}
-body{
-  padding: 0;
-  margin: 0 auto;
-}
-#app {
-  /*width: 1200px;
-  max-width: 1200px;*/
-  margin: 0 auto;
-  padding: 0;
-  /*box-shadow: 0px 0px 10px 7px rgb(225,225,226);*/
-}
-
-a,a:hover,a:visited,a:link{
-  text-decoration: none;
-  outline: none;
-}
-.container {
-    width: 1226px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-
-.clearfix:after {
-  clear: both
-}
-</style>

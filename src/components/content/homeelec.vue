@@ -34,6 +34,7 @@ export default {
   },
   data () {
     return {
+        activeIndex:'1',
         subList: [
           { src: 'http://i3.mifile.cn/a4/xmad_14966741963023_tKCJW.jpg' }
         ],
@@ -122,66 +123,8 @@ export default {
 }
 </script>
 <style scoped>
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
+@import '../../../static/css/menu.css';
 
-.clearfix:after {
-  clear: both
-}
-.el-menu{
-	background: transparent;
-}
-.home-brick-row-2-box {
-    height: 686px;
-}
-.home-brick-box {
-    margin-bottom: 8px;
-}
-.xm-plain-box .box-hd {
-    position: relative;
-    height: 58px;
-    -webkit-font-smoothing: antialiased;
-}
-.xm-plain-box .box-hd .title {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 58px;
-    color: #333;
-}
-.xm-plain-box .box-hd .more {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.xm-plain-box .box-hd .more .tab-list {
-    margin: 0;
-    list-style-type: none;
-    font-size: 16px;
-}
-.xm-plain-box .box-hd .more .tab-list .el-menu-item:hover, .xm-plain-box .box-hd .more .tab-list .el-menu-item.tab-active {
-    color: #ff6700;
-    border-bottom: 2px solid #ff6700;
-}
-.xm-plain-box .box-hd .more .tab-list .el-menu-item {
-    display: inline-block;
-    padding: 0;
-    margin: 0 15px;
-    height: 32px;
-    line-height: 32px;
-    color: #424242;
-    border-bottom: 2px solid #f5f5f5;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-color .5s;
-    transition: border-color .5s;
-    cursor: pointer;
-}
-.home-brick-box .box-hd .more .tab-list .el-menu-item {
-    margin: 0 0 0 30px;
-}
 .brick-promo-list{
     float: left;
     width: 234px;

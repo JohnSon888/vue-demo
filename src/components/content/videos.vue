@@ -1,6 +1,6 @@
 <template>
 	<div id="videos" name="videos">
-		<div id="video" class="home-brick-box home-brick-row-2-box xm-plain-box">
+		<div id="video" class="home-brick-box xm-plain-box">
             <div class="box-hd">
                 <h2 class="title">视频</h2>
             </div>
