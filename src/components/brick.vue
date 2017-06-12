@@ -1,30 +1,47 @@
 <template>
-    <el-card class="brick-item brick-item-m">
-       <div class="figure figure-img">
-       		<a :href="brick.href">
-       			<img :src="brick.src" alt="小米电视4A 43英寸">
-       		</a>
-       	</div> 
-       	<h3 class="title"> 
-	       	<a href="http://item.mi.com/product/5348.html">{{brick.title}}</a>
-       	</h3>  
-       	<p class="desc">{{brick.desc}}</p>  
-       	<p class="price"> 
-	       	<span class="num">{{brick.price}}</span>元  
-       	</p> 
-       	<p class="rank"></p>   
-       	<div class="review-wrapper"> 
-	       	<a href="http://item.mi.com/product/5348.html"> 
-		       	<span class="review">{{brick.review}}</span><span class="author">{{brick.author}}<span class="date"></span></span> 
-	       	</a> 
-       	</div>
+    <el-card class="brick-item brick-item-m"
+        >
+        <div @mouseover="show" @mouseout="hide"
+        :class="{'brick-item-active':active}">
+         <div class="figure figure-img">
+         		<a href="javascript:void(0);">
+         			<img :src="brick.src" alt="小米电视4A 43英寸">
+         		</a>
+         	</div> 
+         	<h3 class="title"> 
+  	       	<a href="javascript:void(0);">{{brick.title}}</a>
+         	</h3>  
+         	<p class="desc">{{brick.desc}}</p>  
+         	<p class="price"> 
+  	       	<span class="num">{{brick.price}}</span>元  
+         	</p> 
+         	<p class="rank"></p> 
+          <div class="review-wrapper"> 
+            <a href="http://item.mi.com/product/5348.html"> 
+              <span class="review">{{brick.review}}</span><span class="author">{{brick.author}}<span class="date"></span></span> 
+            </a> 
+          </div> 
+        </div> 
     </el-card>
 </template>
 <script>
   export default{
     props: ['brick'],
     data() {
-      return;
+      return{
+        active:false
+      }
+      
+    },
+    methods:{
+      show:function(e) {
+        console.log('show');
+        this.active = true;
+      },
+      hide:function(e) {
+        console.log('hide');
+        this.active = false;
+      }
     }
   }
 </script>
@@ -97,12 +114,12 @@
     _zoom: 1;
     color: #b0b0b0;
 }
-.brick-item-m .review-wrapper {
+.brick-item .review-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     z-index: 3;
-    /*width: 234px;*/
     height: 0;
     overflow: hidden;
     _zoom: 1;
@@ -112,6 +129,11 @@
     filter: alpha(opacity=0)\9;
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
+}
+.brick-item-active .review-wrapper {
+    height: 76px;
+    opacity: 1;
+    filter: alpha(opacity=100)\9;
 }
 .brick-item-m .review-wrapper a {
     display: block;

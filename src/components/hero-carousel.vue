@@ -31,7 +31,7 @@ export default {
             desc: '小米加大米',
             price: '111',
             author: 'JohnSon',
-            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+            review: '给儿子买的，儿子很喜欢！一块组装乐在其中！'
           },
           { 
             href: 'http://item.mi.com/product/5348.html',
@@ -40,7 +40,7 @@ export default {
             desc: '小米加大米',
             price: '222',
             author: 'JohnSon',
-            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+            review: '给儿子买的，儿子很喜欢！一块组装乐在其中！'
           },
           { 
             href: 'http://item.mi.com/product/5348.html',
@@ -49,7 +49,7 @@ export default {
             desc: '小米加大米',
             price: '333',
             author: 'JohnSon',
-            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+            review: '给儿子买的，儿子很喜欢！一块组装乐在其中！'
           },
           { 
             href: 'http://item.mi.com/product/5348.html',
@@ -58,7 +58,7 @@ export default {
             desc: '小米加大米',
             price: '444',
             author: 'JohnSon',
-            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+            review: '给儿子买的，儿子很喜欢！一块组装乐在其中！'
           },
           { 
             href: 'http://item.mi.com/product/5348.html',
@@ -67,7 +67,7 @@ export default {
             desc: '小米加大米',
             price: '555',
             author: 'JohnSon',
-            review: 'http://i3.mifile.cn/a4/xmad_14952963924193_UYsJV.jpg'
+            review: '给儿子买的，儿子很喜欢！一块组装乐在其中！'
           }
       ]
     }
