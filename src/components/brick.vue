@@ -1,7 +1,6 @@
 <template>
     <el-card class="brick-item brick-item-m"
-        >
-        <div @mouseover="show" @mouseout="hide"
+         @mouseover.native="show" @mouseout.native="hide"
         :class="{'brick-item-active':active}">
          <div class="figure figure-img">
          		<a href="javascript:void(0);">
@@ -21,7 +20,6 @@
               <span class="review">{{brick.review}}</span><span class="author">{{brick.author}}<span class="date"></span></span> 
             </a> 
           </div> 
-        </div> 
     </el-card>
 </template>
 <script>
@@ -35,11 +33,9 @@
     },
     methods:{
       show:function(e) {
-        console.log('show');
         this.active = true;
       },
       hide:function(e) {
-        console.log('hide');
         this.active = false;
       }
     }
